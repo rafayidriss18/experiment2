@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Surprise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Who's Watching Screen -->
+    <div class="container" id="watchingScreen">
+        <div class="watching-header">
+            <h1>Who's Watching?</h1>
+        </div>
+        <div class="profiles-container">
+            <div class="profile" id="sherryProfile">
+                <img src="sherry.jpeg" alt="Sherry Profile" class="profile-pic">
+                <p class="profile-name">sherry</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div class="dashboard" id="dashboard">
+        <!-- Video Background -->
+        <video 
+            id="montageVideo" 
+            class="background-video" 
+            autoplay 
+            muted 
+            loop
+            playsinline
+        >
+            <source src="montage.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Dark Overlay -->
+        <div class="video-overlay"></div>
+
+        <!-- Content Overlay -->
+        <div class="content-wrapper">
+            <div class="title-section">
+                <h1 class="main-title">SHERBANO</h1>
+                <div class="match-badge">99% Match</div>
+            </div>
+
+            <div class="controls">
+                <button id="playButton" class="play-btn" title="Click to unmute">
+                    <span class="play-icon">▶</span>
+                    <span class="play-text">Play</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="backgroundMusic" preload="auto">
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
